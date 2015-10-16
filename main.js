@@ -201,7 +201,7 @@ function init() {
     });
    if(navigator.userAgent.match(/MicroMessenger/i) != null){
        $('header').remove();
-       $('.adv').css('margin-top',0);
+       $('.adv').css('margin-top','0');
    }
 
 }

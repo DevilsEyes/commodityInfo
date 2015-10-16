@@ -156,6 +156,7 @@ juicer.register('transTimeStamp', function (unixtime) {
                 score: storeInfo.score,
                 storeCommentNum: storeInfo.storeCommentNum
             };
+            document.title = commodityInfo.title;
 
             if(ex.template.main)init();
             if(comment.totalNum>=0)comment.init();
@@ -197,5 +198,9 @@ function init() {
     });
     $('.adv').click(function(){
         download();
-    })
+    });
+   if(navigator.userAgent.match(/MicroMessenger/i) != null){
+       $('header').remove();
+   }
+
 }

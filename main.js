@@ -147,7 +147,7 @@ juicer.register('transTimeStamp', function (unixtime) {
                 images: commodityInfo.images,
                 description: commodityInfo.description,
                 price: commodityInfo.price,
-                tags: commodityInfo.tag ? commodityInfo.tag.split('#') : [],
+                tags: commodityInfo.tag ? commodityInfo.tag.split('#').splice(0,3) : [],
 
                 avatar: storeInfo.avatar,
                 nickname: storeInfo.nickname,

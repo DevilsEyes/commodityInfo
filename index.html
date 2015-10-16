@@ -45,16 +45,19 @@
     <div class="p15">
         <h1 class="f28">${title}</h1>
 
-        <p class="f32">￥ ${price}</p>
+        <p>
+            <span class="f32 price-now">￥${price}</span>
+            <span class="f24 price-delete">￥${primeCost}</span>
+        </p>
     </div>
 
-    {@if tags.length!=0}
-    <div class="p15">
-        {@each tags as el}
-        <span class="f24 tag">${el}</span>
-        {@/each}
-    </div>
-    {@/if}
+    <!--{@if tags.length!=0}-->
+    <!--<div class="p15">-->
+    <!--{@each tags as el}-->
+    <!--<span class="f24 tag">${el}</span>-->
+    <!--{@/each}-->
+    <!--</div>-->
+    <!--{@/if}-->
 
     <div class="p15">
         <div class="avatar">
@@ -81,10 +84,12 @@
     <div class="p15 f24 comment">
     </div>
 
-    {@if images.length>1}
     <div>
         <div class="header p15">
             <i class="detail"></i><span>商品详情</span>
+        </div>
+        <div class="description f24">
+            $${description}
         </div>
         {@each images as el, index}
         {@if index!=0}
@@ -92,7 +97,6 @@
         {@/if}
         {@/each}
     </div>
-    {@/if}
 
     <footer class="f36">
         预约

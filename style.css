@@ -46,6 +46,15 @@ header{
     margin-top: 50px !important;
 }
 
+.scroller{
+    width: 100%;
+    overflow: hidden;
+}
+
+#imgAr{
+    white-space: nowrap;
+}
+
 h1{
     color: #888888;
 }
@@ -62,6 +71,15 @@ p{
     margin-right: 5px;
     color: #afafaf;
     background-color: #f2f2f2;
+}
+
+.price-now{
+    color: rgb(255,68,0);
+}
+
+.price-delete{
+    text-decoration: line-through;
+    color: #aaaaaa;
 }
 
 .avatar{
@@ -202,4 +220,9 @@ li>h3{
 li>p{
     color: #1a1a1a;
     padding: 5px 0 18px 70px;
+}
+
+.description{
+    padding: 20px;
+    color: #333333;
 }

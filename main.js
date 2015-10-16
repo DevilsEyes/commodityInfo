@@ -92,12 +92,12 @@ juicer.register('transTimeStamp', function (unixtime) {
         var curDate = new Date(unixtime);
         str = (curDate.getMonth() + 1) + '-' + curDate.getDate() + ' ' + curDate.getHours() + ':' + curDate.getMinutes();
     } else if (timeDiff > 3600 * 24) {
-        str = Math.ceil(timeDiff / 86400) + "天前";
+        str = Math.ceil(timeDiff / 86400) + "天前 ";
     } else {
         if (timeDiff > 3600) {
-            str = Math.floor(timeDiff / 3600) + "小时前";
+            str = Math.floor(timeDiff / 3600) + "小时前 ";
         } else if (timeDiff > 60) {
-            str = Math.floor(timeDiff / 60) + "分钟前";
+            str = Math.floor(timeDiff / 60) + "分钟前 ";
         } else {
             str = "刚刚";
         }
